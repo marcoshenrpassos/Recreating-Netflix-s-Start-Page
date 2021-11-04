@@ -1,0 +1,107 @@
+:root{
+    --red:#e50914;
+    --black:#141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*basic elements*/
+body{
+    background: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--red);
+    font-family: "arial black", times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*main movie*/
+.main-movie{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Netflix/img/capa-house.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.main-movie .title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button{
+    background-color: rgba(0, 0, 0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.main-movie .container{
+    width: 70%;
+    text-align: justify;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-movies{
+    margin-top: 10px;
+}
